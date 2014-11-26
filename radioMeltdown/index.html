@@ -11,7 +11,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Besondere Stile für diese Vorlage -->
-   <link rel="stylesheet" href="customCss/navbar.css" />
+   <link rel="stylesheet" href="customCss/sticky-footer.css" />
    <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     
 
@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="https://twitter.com/RadioMeltdownCH"><img alt="twitter" src="logos/twitter_bird.png" id="twitterLogo"></a>
-          <a class="navbar-brand" href="hhttps://www.facebook.com/radiomeltdownch"><img alt="facebook" src="logos/facebook.png" id="facebookLogo"></a>
+          <a class="navbar-brand" href="https://www.facebook.com/radiomeltdownch"><img alt="facebook" src="logos/facebook.png" id="facebookLogo"></a>
 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -48,37 +48,38 @@
               <li><a href="#" id="musik" >Musik</a></li>
               <li><a href="#" id= "programm">Programm</a></li>              
               <li><a href="#" id="live-Shows" >Live-Shows</a></li>
-              <li><a href="#" id="events">Events</a></li>
-              <li><a href="#" id="team">Team</a></li>
+              <!--<li><a href="#" id="events">Events</a></li>-->
+              <!--<li><a href="#" id="team">Team</a></li>-->
               <li><a href="#" id="supporter">Supporter</a></li>
-              <li><a href="#" id="newsletter">Newsletter</a></li>
-              <li><a href="#" id="download">Download App</a></li>
-              <li ><a href="#" id="kontakt">Kontakt</a></li>
+              <!--<li><a href="#" id="newsletter">Newsletter</a></li>-->
+              <!--<li><a href="#" id="download">Download App</a></li>-->
+              <!--<li ><a href="#" id="kontakt">Kontakt</a></li>-->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
     </div>
-
     <div class="container" id="loadedContent">
     </div>
-    <div class ="container navbar-fixed-bottom">
-        <div class="well well-sm" id="player">
-            <div class="row">
-                <div class="media col-xs-4 col-sm-2 col-md-1" id="media">
-                    <audio loop preload  id="radioSource">
-                        <source src="http://50.7.129.122:8343/;stream.mp3" type="audio/mp3">
-                    </audio>
-                    <button type="button" class="btn btn-default btn-lg" id="playPauseButton">
-                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                    </button>
+        <footer class="footer">
+            <div class="container">
+                <div id="player">
+                <div class="row">
+                    <div class="media col-xs-4 col-sm-2 col-md-1" id="media">
+                        <audio loop preload  id="radioSource">
+                            <source src="http://50.7.129.122:8343/;stream.mp3" type="audio/mp3">
+                        </audio>
+                        <button type="button" class="btn btn-default btn-lg" id="playPauseButton">
+                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class=" col-xs-8 col-sm-10 col-md-11"> 
+                        <p id="cc_stream_info_song">Loading...<p>
+                    </div>
                 </div>
-                <div class=" col-xs-8 col-sm-10 col-md-11"> 
-                    <p id="cc_stream_info_song">Loading...<p>
                 </div>
-            </div>
         </div>
-    </div>
+      </footer>
 
 
     <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
