@@ -23,39 +23,43 @@ $(document).ready(function(){
         $('#loadedContent').load("load/home.php");
     });
     
-    $('#meltdown').on('click', function(){
+    /*$('#meltdown').on('click', function(){
         $('#loadedContent').load("load/meltdown.php");
         
-    });
+    });*/
     $('#programm').on('click', function(){
         $('#loadedContent').load("load/programm.php");
     });
-    $('#live-Shows').on('click', function(){
+    /*$('#live-Shows').on('click', function(){
         $('#loadedContent').load("load/live-Shows.php");
        
-    });
-    $('#events').on('click', function(){
+    });*/
+    /*$('#events').on('click', function(){
         $('#loadedContent').load("load/events.php");
         
-    });
-    $('#team').on('click', function(){
+    });*/
+    /*$('#team').on('click', function(){
         $('#loadedContent').load("load/team.php");
         
-    });
+    });*/
     $('#supporter').on('click', function(){
         $('#loadedContent').load("load/supporter.php");
         
     });
-    $('#download').on('click', function(){
+    /*$('#download').on('click', function(){
         $('#loadedContent').load("load/download.php");
         
-    });
-    $('#kontakt').on('click', function(){
+    });*/
+    /*$('#kontakt').on('click', function(){
         $('#loadedContent').load("load/kontakt.php");
         
-    });
-    $('#newsletter').on('click', function(){
+    });*/
+    /*$('#newsletter').on('click', function(){
         $('#loadedContent').load("load/newsletter.php");
+        
+    });*/
+    $('#about').on('click', function(){
+        $('#loadedContent').load("load/about.php");
         
     });
 });

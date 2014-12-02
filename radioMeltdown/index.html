@@ -8,24 +8,25 @@
     <!--Windows Live-Tiles -->
     <meta name="application-name" content="radio-meltdown.ch"/>
     <meta name="msapplication-TileColor" content="#000000"/>
-    <meta name="msapplication-square70x70logo" content="tiny.png"/>
-    <meta name="msapplication-square150x150logo" content="square.png"/>
-    <meta name="msapplication-wide310x150logo" content="wide.png"/>
-    <meta name="msapplication-square310x310logo" content="large.png"/>
+    <meta name="msapplication-square70x70logo" content="Wp8webtiles/tiny.png"/>
+    <meta name="msapplication-square150x150logo" content="Wp8webtiles/square.png"/>
+    <meta name="msapplication-wide310x150logo" content="Wp8webtiles/wide.png"/>
+    <meta name="msapplication-square310x310logo" content="Wp8webtiles/large.png"/>
     <!--IOS and Androi web clips-->
     <link rel="apple-touch-icon" href="ios/AppIcon.appiconset/Icon-60@2x.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="ios/AppIcon.appiconset/Icon-60@3x.png" />
     <link rel="apple-touch-icon" sizes="76x76" href="ios/AppIcon.appiconset/Icon-76.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="ios/AppIcon.appiconset/Icon-76@2x.png" />
     <link rel="apple-touch-icon" sizes="58x58" href="ios/AppIcon.appiconset/Icon-Small@2x.png" />
-    <title>Bootstrap-Basis-Vorlage</title>
+    
+    <title>Beta: radio-meltdown.ch</title>
     <!-- Bootstrap-CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Besondere Stile für diese Vorlage -->
-   <link rel="stylesheet" href="customCss/sticky-footer.css" />
+   <link rel="stylesheet" href="customCss/customCss.css" />
    <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     
 
@@ -38,7 +39,7 @@
   </head>
   <body>
   <div id="logo" class="container">
-    <img id="logoImg" src="img/radio_logo.png"/>
+    <img id="logoImg" src="img/radio_logo_white.png"/>
   </div>
      <div class="container">
     <!-- Fixierte Navbar -->
@@ -57,12 +58,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">      
-              <li class="active"><a href="#" id="home" >Home <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span></a></li>
-              <li><a href= "#" id="meltdown" >Meltdown </a></li>
-              <li><a href="#" id="musik" >Musik</a></li>
+              <li><a href="#" id="home" >Home <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span></a></li>
+              <!--<li><a href= "#" id="meltdown" >Meltdown </a></li>-->
+              <!--<li><a href="#" id="musik" >Musik</a></li>-->
               <li><a href="#" id= "programm">Programm</a></li>              
-              <li><a href="#" id="live-Shows" >Live-Shows</a></li>
+              <!--<li><a href="#" id="live-Shows" >Live-Shows</a></li>-->
               <li><a href="#" id="supporter">Supporter</a></li>
+              <li ><a href="#" id="about">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -76,7 +78,7 @@
                 <div class="row">
                     <div class="media col-xs-4 col-sm-2 col-md-1" id="media">
                         <audio loop preload  id="radioSource">
-                            <source src="http://50.7.129.122:8343/;stream.mp3" type="audio/mp3">
+                            <source src="http://50.7.129.122:8343/;stream.mp3" type="audio/mpeg">
                         </audio>
                         <button type="button" class="btn btn-default btn-lg" id="playPauseButton">
                             <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
